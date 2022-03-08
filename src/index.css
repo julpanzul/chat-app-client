@@ -1,5 +1,10 @@
-body {
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -10,4 +15,108 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+a {
+  text-decoration: none;
+  color: tomato;
+}
+
+/* Layout */
+
+.container  {
+  width: 100%;
+  height: 100vh;
+  background-color: #999;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Join Page */
+
+.chatContainer, .joinContainer {
+  flex-grow: 1;
+  border-radius: 1rem;
+  background-color: #eee;
+  max-width: 300px;
+}
+
+.joinContainer {
+  padding: 2em 1em;
+  text-align: center;
+}
+
+.chatContainer {
+  padding: 1em;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.heading {
+  margin-bottom: 20px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: .8rem;
+}
+
+input, button {
+  width: 100%;
+  padding: 5px 10px;
+  outline: none;
+  border: 1px solid #eee;
+  border-radius: 5px;
+  font-size: 0.9rem;
+}
+
+button:active:focus {
+  outline: none;
+}
+
+input:focus{
+  border: 1px solid #999;
+}
+
+.form button{
+  background-color: salmon;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+
+.form .btn:hover {
+  background-color: rgb(160, 160, 160);
+}
+
+/* Info Bar */
+.infobar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: .5em;
+  margin-bottom: 1em;
+  border-bottom: 1px solid rgb(160, 160, 160, .5);
+}
+
+.messagesContainer {
+  flex: 1 0 10%;
+}
+
+.chat {
+  display: flex;
+  flex-direction: row;
+  gap: .5rem;
+}
+
+.chat input {
+  border: 1px solid #eee;
+  flex: 1 0 80%;
 }

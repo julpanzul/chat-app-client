@@ -1,0 +1,18 @@
+.messagesContainer {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.message_text {
+    padding: .5em .8em;
+    background-color: #fff;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+.my_message {
+    text-align: right;
+    background-color: darkcyan;
+    color: #fff;
+}
